@@ -1,0 +1,43 @@
+ /* About section background */
+ .about {
+    background: #f7f7f7;
+  }
+
+  /* Rooms section background */
+  .rooms {
+    background: #fff;
+  }
+
+  /* Footer section styles */
+  footer {
+    padding: 50px 0;
+  }
+
+  footer h3 {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  footer p {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  footer a {
+    color: #fff;
+  }
+
+  #hero {
+    overflow: hidden;
+    height: 100px;
+
+  }
+
+  .test {
+    color: red;
+  }
+
+  h1{
+    color: blue;
+    background-color: red;
+}
