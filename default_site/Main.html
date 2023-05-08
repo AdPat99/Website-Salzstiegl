@@ -39,7 +39,19 @@
             <a class="nav-link" href="Punkt_3.html">Punkt 3</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Punkt_4.html">Punkt 4</a>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                Kontakt
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Öffnungszeiten</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Kontakt/Anfrage</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Gutscheine</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -47,7 +59,7 @@
 
     <!-- Header section with carosel -->
     <header class="hero">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
