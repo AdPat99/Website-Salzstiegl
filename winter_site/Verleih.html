@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -38,113 +40,63 @@
     </div>
   </nav>
 
- <!-- Header section with carosel -->
- <header class="hero">
-  <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://via.placeholder.com/1500x500" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+  <!-- Header section with carosel -->
+  <header class="hero">
+    <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/1500x500" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/1500x500" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/1500x500" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/1500x500" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/1500x500" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</header>
+  </header>
 
-  <!-- About section with microinteractions -->
+  <!-- Info Skifahren -->
   <section class="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h2>Über uns</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus in cum obcaecati distinctio delectus hic molestias saepe tempora temporibus, repudiandae aut quos esse odit voluptatum. Perspiciatis molestiae ea neque iste.</p>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-check"></i> Beispiel 1</li>
-            <li><i class="fas fa-check"></i> Besipiel 2</li>
-            <li><i class="fas fa-check"></i> Beispiel 3</li>
-          </ul>
-          <a href="#" class="btn btn-outline-secondary">Weiter lesen</a>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <img class="card-img-top" src="https://images/about.jpg" alt="Mountain Hotel">
-        <div class="card-body">
-          <h5 class="card-title">Unsere Aktivitäten</h5>
-          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, molestias!</p>
-          <a href="#" class="btn btn-primary">Weiter lesen</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-  <!-- Rooms section with animations -->
-  <section class="rooms">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h2>Unsere Zimmer</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1615417435058-55e57b9b9d23" alt="Room">
-            <div class="card-body">
-              <h5 class="card-title">Raum 1</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet.</p>
-              <a href="#" class="btn btn-outline-secondary">Jetzt Buchen!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1615417435058-55e57b9b9d23" alt="Room">
-            <div class="card-body">
-              <h5 class="card-title">Raum 2</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet.</p>
-              <a href="#" class="btn btn-outline-secondary">Jetzt buchen</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1615417435058-55e57b9b9d23" alt="Room">
-            <div class="card-body">
-              <h5 class="card-title">Raum 3</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet.</p>
-              <a href="#" class="btn btn-outline-secondary">Jetzt buchen</a>
-            </div>
-          </div>
+        <div class="col-md-12">
+          <h2>Ski - Snowboard - Schneeschuhe - kleiner Skishop</h2>
+          <h3>tolle Modelle zum günstigen Preis</h3>
+          <img src="" alt="">
+          <p>Gerne beraten wir Sie im Skiverleih welches Skimodell oder welches Snowboard für Sie ideal ist. Es sind von
+            Kinderski, Schuhe alle Größen bis Erwachsene alles reichlich vorhanden. Eine Vorreservierung ist nicht
+            notwendig. Die Ausrüstung wird auf Ihr Können, Gewicht, und Alter eingestellt, sodass einem schönen
+            günstigen Skitag nichts mehr im Wege steht. Ausserdem stehen Schneeschuhe zum Verleih zur Verfügung.
+            Tourenski haben wir nicht vorrätig - wir empfehlen: Northland Graz in der Elisabethstrasse, Hr. Jauck: 0664
+            844973 berät Euch gerne. Bitte immer VOR dem Aufstieg Tourengeherticket € 10 pro Person an der Liftkasse
+            oder im Moasterhaus oder in der Rodelhütte kaufen.</p>
         </div>
       </div>
     </div>
@@ -168,9 +120,9 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO"></script>
-    </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO"></script>
+</body>
+
 </html>
 <script>
   // Animate on scroll library initialization
@@ -180,4 +132,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
 </body>
+
 </html>
