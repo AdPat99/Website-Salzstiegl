@@ -1,0 +1,55 @@
+ /* About section background */
+ .about {
+    background: #f7f7f7;
+  }
+
+  /* Rooms section background */
+  .rooms {
+    background: #fff;
+  }
+
+  /* Footer section styles */
+  footer {
+    padding: 50px 0;
+  }
+
+  footer h3 {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  footer p {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  footer a {
+    color: #fff;
+  }
+
+  .btn-primary {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+/*Dropdown */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  background-color: whitesmoke;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+/*Dropdown */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  background-color: whitesmoke;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
