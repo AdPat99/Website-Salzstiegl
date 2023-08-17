@@ -1,4 +1,4 @@
-.transition-1 {
+.transition {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,9 +11,32 @@
   transition: 0.25s ease-out;
 }
 
+.transition.is-active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.transition.is-active-2 {
+  pointer-events: all;
+  opacity: 1;
+}
+/*
+.transition-1 {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  z-index: 101;
+  width: 100%;
+  background-color: var(--dark);
+  pointer-events: none;
+  transition: 0.15s ease-out;
+}
+
 .transition-1.is-active {
   pointer-events: all;
   opacity: 1;
+  right: 0px;
 }
 
 .transition-2 {
@@ -25,12 +48,15 @@
   width: 100%;
   background-color: var(--dark);
   pointer-events: none;
-  transition: 0.25s ease-out;
+  transition: 0.15s ease-out;
 }
 
 .transition-2.is-active {
+  pointer-events: all;
+  opacity: 1;
   left: 0px;
 }
+*/
  
  /* About section background */
  .about {
