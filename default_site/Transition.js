@@ -1,39 +1,43 @@
+/*Transition - SUmmer/Winter*/
 window.onload = () => {
   const transElem = document.querySelector('.transition');
   const STransElem = document.querySelector('#STrans');
   const WTransElem = document.querySelector('#WTrans');
 
-  setTimeout(() => {
-    transElem.classList.remove('is-active');
-  }, 250);
+  // Create sun and snowflake images
+  const sunElem = document.createElement('img');
+  sunElem.src = '../Attachments/Transition/Sun.png';
+  sunElem.style.display = 'none';
+  transElem.appendChild(sunElem);
 
+  const snowflakeElem = document.createElement('img');
+  snowflakeElem.src = '../Attachments/Transition/Snowflake.png';
+  snowflakeElem.style.display = 'none';
+  transElem.appendChild(snowflakeElem);
+
+  // Summer transition
   STransElem.addEventListener('click', e => {
     e.preventDefault();
     let target = e.target.href;
 
-    console.log(transElem);
-
     transElem.classList.add('is-active');
-
-    console.log(transElem);
+    sunElem.style.display = 'block';
 
     setTimeout(() => {
-      window.location.href = target; 
-    }, 250);
+      window.location.href = target;
+    }, 750);
   });
 
+  // Winter transition
   WTransElem.addEventListener('click', e => {
     e.preventDefault();
     let target = e.target.href;
 
-    console.log(transElem);
-
     transElem.classList.add('is-active-2');
+    snowflakeElem.style.display = 'block';
 
-    console.log(transElem);
-
-    setInterval(() => {
+    setTimeout(() => {
       window.location.href = target;
-    }, 250);
+    }, 750);
   });
 }
