@@ -7,96 +7,132 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Add custom CSS for the side window and button */
-/* Add custom CSS for the side window and buttons */
-body {
-    overflow-x: hidden;
-    position: relative;
-}
-.side-window {
-    position: fixed;
-    bottom: 25%;
-    right: -320px; /* Adjust the width of the side window */
-    width: 320px; /* Adjust the width of the side window */
-    height: 50%; /* Adjust the height of the side window */
-    background-color: white;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease-in-out;
-    z-index: 1000;
-}
-.side-window.open {
-    right: 0;
-}
-.side-window .btn-group {
-    text-align: center; /* Center-align the buttons */
-    margin: 20px 0; /* Add margin top and bottom for spacing */
-}
-.side-window .btn {
-    margin: 0 20px; /* Add margin to buttons for spacing */
-}
-.side-window .btn-visible {
-    display: none;
-}
-.side-window.open .btn-visible {
-    display: block;
-}
-.vertical-button {
-    position: fixed;
-    right: -25px; /* Adjust the left position */
-    top: 50%; /* Adjust the top position */
-    transform: translateY(-50%) rotate(-90deg); /* Rotate the button text vertically */
-    z-index: 1001;
-}
-/* Additional custom styles for the form */
-.popup-content {
-    padding: 20px;
-}
-.popup-content h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.form-group {
-    margin-bottom: 15px;
-}
+        body {
+            font-family: Arial, sans-serif;
+        }
 
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            padding: 20px;
+            z-index: 2;
+            border-radius: 5px;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: left; /* Align text to the left */
+            overflow: auto;
+            max-width: 80%;
+            max-height: 80%;
+            overflow: auto;
+        }
+
+        .overlay-content {
+            background-color: #fff;
+            padding: 20px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 0; /* Adjust the top position */
+            right: 0;
+            font-size: 30px;
+            cursor: pointer;
+            color: #333;
+            margin-top: -10px; /* Add a negative margin to move it higher */
+        }
+
+        .page-content {
+            filter: blur(0);
+            transition: filter 0.3s ease;
+        }
+
+        .blur {
+            filter: blur(5px);
+        }
     </style>
 </head>
 <body>
 
-    <div id="bookingPopup" class="side-window">
-        <div class="popup-content">
-            <h2>Buchen</h2>
-            <div class="form-group">
-                <label for="popupFirstName">Vorname:</label>
-                <input type="text" id="popupFirstName" class="form-control" required maxlength="50">
-            </div>
-            <div class="form-group">
-                <label for="popupLastName">Nachname:</label>
-                <input type="text" id="popupLastName" class="form-control" required maxlength="50">
-            </div>
-            <div class="form-group">
-                <label for="popupPhone">Telefonnummer:</label>
-                <input type="tel" id="popupPhone" class="form-control" required maxlength="15">
-            </div>
-            <div class="form-group">
-                <label>Extra Wünsche:</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="popupOptions" id="popupOption1" value="Familien Sommerurlaub">
-                    <label class="form-check-label" for="popupOption1">Familien Sommerurlaub</label>
+    <button type="button" class="btn btn-primary open-overlay-btn" data-overlay="overlay1">Open Overlay 1</button>
+    <button type="button" class="btn btn-primary open-overlay-btn" data-overlay="overlay2">Open Overlay 2</button>
+
+    <div id="overlay1" class="overlay">
+        <div class="overlay-content">
+            <span class="close" data-overlay="overlay1">&times;</span>
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Overlay 1</h2>
+                    <p>Overlay 1 content goes here.</p>
                 </div>
-                <!-- Add more radio options as needed -->
-            </div>
-            <div class="container row">
-                <button type="button" id="popupBookbtn" class="btn btn-primary btn-visible col-md">Weiter</button>
-                <button type="button" id="popupClosebtn" class="btn btn-secondary col-md">Schließen</button>
+                <div class="col-md-4">
+                    <img src="your-image1.jpg" alt="Image">
+                </div>
             </div>
         </div>
     </div>
 
-    <button type="button" id="bookbtn" class="btn btn-primary vertical-button">Buchen</button>
+    <div id="overlay2" class="overlay">
+        <div class="overlay-content">
+            <span class="close" data-overlay="overlay2">&times;</span>
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Overlay 2</h2>
+                    <p>Overlay 2 content goes here.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="your-image2.jpg" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="Sidebooking.js"></script> 
+    <div class="page-content">
+        <!-- Your page content goes here -->
+        <button type="button" id="bookbtn" class="btn btn-primary vertical-button">Buchen</button>
+    </div>
 
+    <script>
+        // Function to open the overlay
+        function openOverlay(event) {
+            var overlayId = event.target.getAttribute("data-overlay");
+            var overlay = document.getElementById(overlayId);
+            var pageContent = document.querySelector(".page-content");
+
+            overlay.style.display = "block";
+            pageContent.classList.add("blur");
+        }
+
+        // Function to close the overlay
+        function closeOverlay(event) {
+            var overlayId = event.target.getAttribute("data-overlay");
+            var overlay = document.getElementById(overlayId);
+            var pageContent = document.querySelector(".page-content");
+
+            overlay.style.display = "none";
+            pageContent.classList.remove("blur");
+        }
+
+        // Add event listeners to open overlay buttons
+        var openOverlayButtons = document.querySelectorAll(".open-overlay-btn");
+        openOverlayButtons.forEach(function (button) {
+            button.addEventListener("click", openOverlay);
+        });
+
+        // Add event listeners to close buttons
+        var closeButtons = document.querySelectorAll(".close");
+        closeButtons.forEach(function (button) {
+            button.addEventListener("click", closeOverlay);
+        });
+
+        // Close the overlay if the user clicks outside of it
+        window.addEventListener("click", function (event) {
+            if (event.target.classList.contains("overlay")) {
+                closeOverlay(event);
+            }
+        });
+    </script>
 </body>
 </html>

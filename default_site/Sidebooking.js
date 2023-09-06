@@ -4,12 +4,9 @@ const popupLastNameInput = document.getElementById("popupLastName");
 const popupPhoneInput = document.getElementById("popupPhone");
 const popupOptionInput = document.querySelector('input[name="popupOptions"]:checked');
 
-// Get the "Weiter" button in the side window
-const popupBookbtn = document.getElementById("popupBookbtn");
-
-// Function to copy data from side window to main page
+// Function to copy data from side window to sessionStorage
 function copyData() {
-    // Store data from side window in sessionStorage
+    // Store data from the side window in sessionStorage
     sessionStorage.setItem("popupFirstName", popupFirstNameInput.value);
     sessionStorage.setItem("popupLastName", popupLastNameInput.value);
     sessionStorage.setItem("popupPhone", popupPhoneInput.value);
@@ -20,7 +17,7 @@ function copyData() {
 }
 
 // Event listener for the "Weiter" button
-popupBookbtn.addEventListener("click", function () {
+document.getElementById("popupBookbtn").addEventListener("click", function () {
     copyData();
     // Redirect to buchen.html
     window.location.href = "buchen.html";

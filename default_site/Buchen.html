@@ -27,7 +27,7 @@
     </div>
     <div class="triangle2">
       <div class="line-snow"></div>
-      <div style="display:flex ;" >
+      <div style="display:flex ;">
         <a href="../winter_site/wMain.html" class="btn btn-snow" id="WTrans">
           Winter
           <img src="../Attachments/Transition/Snowflake.png" style="width :32px ; height :32px ; margin-left :12px ;"
@@ -39,7 +39,8 @@
     <nav class="navbar navbar-expand-md">
 
       <div></div>
-      <a class="navbar-brand" id="Brand" href="Main.html"><img id="Logo" src="../Attachments/Images/Salzlogo_140x60.png" alt=""></a>
+      <a class="navbar-brand" id="Brand" href="Main.html"><img id="Logo" src="../Attachments/Images/Salzlogo_140x60.png"
+          alt=""></a>
 
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -66,94 +67,94 @@
   </div>
 
   <!--Booking section-->
- <section style="background-color: #f7f7f7;">
-  <div class="container">
-    <form id="bookingForm">
+  <section style="background-color: #f7f7f7;">
+    <div class="container">
+      <form id="bookingForm">
         <h2 class="text-center">Buchen</h2>
         <div class="form-group">
-            <label for="firstName">Vorname:</label>
-            <input type="text" class="form-control" id="firstName" required maxlength="50" value="">
+          <label for="firstName">Vorname:</label>
+          <input type="text" class="form-control" id="firstName" required maxlength="50" value="">
         </div>
         <div class="form-group">
-            <label for="lastName">Nachname:</label>
-            <input type="text" class="form-control" id="lastName" required maxlength="50" value="">
+          <label for="lastName">Nachname:</label>
+          <input type="text" class="form-control" id="lastName" required maxlength="50" value="">
         </div>
         <div class="form-group">
-            <label for="phoneNumber">Telefonnummer:</label>
-            <input type="tel" class="form-control" id="phoneNumber" required value="">
+          <label for="phoneNumber">Telefonnummer:</label>
+          <input type="tel" class="form-control" id="phoneNumber" required value="">
         </div>
         <div class="form-row">
-            <div class="col">
-                <div class="form-group">
-                    <label for="arrivalDate">Anreise:</label>
-                    <input type="date" class="form-control" id="arrivalDate" required>
-                </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="arrivalDate">Anreise:</label>
+              <input type="date" class="form-control" id="arrivalDate" required>
             </div>
-            <div class="col">
-                <div class="form-group">
-                    <label for="departureDate">Abreise:</label>
-                    <input type="date" class="form-control" id="departureDate" required>
-                </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="departureDate">Abreise:</label>
+              <input type="date" class="form-control" id="departureDate" required>
             </div>
+          </div>
         </div>
         <div class="form-row">
-            <div class="col">
-                <label for="inputState1">Anzhal von Personen</label>
-                <select id="inputState1" class="form-control" required onchange="showTooltip1(this)">
-                    <option selected>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>mehr als 9</option>
-                </select>
-            </div>
-            <div class="col">
-                <label for="inputState2">Anzahl der Zimmer</label>
-                <select id="inputState2" class="form-control" required onchange="showTooltip2(this)">
-                    <option selected>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>mehr als 4</option>
-                </select>
-            </div>
+          <div class="col">
+            <label for="inputState1">Anzhal von Personen</label>
+            <select id="inputState1" class="form-control" required onchange="showTooltip1(this)">
+              <option selected>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>mehr als 9</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="inputState2">Anzahl der Zimmer</label>
+            <select id="inputState2" class="form-control" required onchange="showTooltip2(this)">
+              <option selected>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>mehr als 4</option>
+            </select>
+          </div>
         </div>
 
         <div class="form-group">
-            <label for="firstName">Weitere Wuensche</label>
-            <textarea class="form-control" id="textAreaExample" rows="4" maxlength="400"></textarea>
+          <label for="firstName">Weitere Wuensche</label>
+          <textarea class="form-control" id="textAreaExample" rows="4" maxlength="400"></textarea>
         </div>
 
         <button type="button" id="bookbtn" class="btn btn-large btn-primary">Buchen</button>
 
-    </form>
+      </form>
 
-</div>
- </section>
-    <!-- Footer section -->
-    <footer class="bg-secondary bg-gradient text-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Moasterhaus</h3>
-            <p>Hirschegg<br>AT</p>
-          </div>
-          <div class="col-md-4">
-            <h3>Öffnungszeiten</h3>
-            <p>Montag - Freitag: 00:00 - 24:00<br>Samstag - Sontag: 00:00 - 24:00</p>
-          </div>
-          <div class="col-md-4">
-            <h3>Weitere Informationen</h3>
-            <p>Privacy Policy<br>Terms of Use<br>Cookies</p>
-          </div>
+    </div>
+  </section>
+  <!-- Footer section -->
+  <footer class="bg-secondary bg-gradient text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Moasterhaus</h3>
+          <p>Hirschegg<br>AT</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Öffnungszeiten</h3>
+          <p>Montag - Freitag: 00:00 - 24:00<br>Samstag - Sontag: 00:00 - 24:00</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Weitere Informationen</h3>
+          <p>Privacy Policy<br>Terms of Use<br>Cookies</p>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
@@ -163,6 +164,18 @@
   <script src="Transition.js"></script>
   <script src="booking.js"></script>
   <script src="Sidebooking.js"></script>
+  <script>
+    // Retrieve data from sessionStorage and populate the form fields
+    document.getElementById("firstName").value = sessionStorage.getItem("popupFirstName") || "";
+    document.getElementById("lastName").value = sessionStorage.getItem("popupLastName") || "";
+    document.getElementById("phoneNumber").value = sessionStorage.getItem("popupPhone") || "";
+    const popupOptionValue = sessionStorage.getItem("popupOption");
+
+if (popupOptionValue) {
+    // Set the selected option text in the textarea
+    document.getElementById("textAreaExample").value = popupOptionValue;
+}
+  </script>
 </body>
 
-</html>
+</html> 

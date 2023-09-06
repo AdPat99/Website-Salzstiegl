@@ -179,6 +179,40 @@
         </div>
       </div>
     </section>
+    <!--The side window for booking-->
+    <section>
+      <div id="bookingPopup" class="side-window">
+        <div class="popup-content">
+            <h2>Buchen</h2>
+            <div class="form-group">
+                <label for="popupFirstName">Vorname:</label>
+                <input type="text" id="popupFirstName" class="form-control" required maxlength="50">
+            </div>
+            <div class="form-group">
+                <label for="popupLastName">Nachname:</label>
+                <input type="text" id="popupLastName" class="form-control" required maxlength="50">
+            </div>
+            <div class="form-group">
+                <label for="popupPhone">Telefonnummer:</label>
+                <input type="tel" id="popupPhone" class="form-control" required maxlength="15">
+            </div>
+            <div class="form-group">
+                <label>Extra Wünsche:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="popupOptions" id="popupOption1" value="Familien Sommerurlaub">
+                    <label class="form-check-label" for="popupOption1" value="Familien Sommerurlaub">Familien Sommerurlaub</label>
+                    <!--There seems to be an issue, that does not put the options into the textfield-->
+                </div>
+            </div>
+            <div class="container row">
+                <button type="button" id="popupBookbtn" class="btn btn-primary btn-visible col-md">Weiter</button>
+                <button type="button" id="popupClosebtn" class="btn btn-secondary col-md">Schließen</button>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" id="bookbtn" class="btn btn-primary vertical-button">Buchen</button>
+    </section>
     <!-- Footer section -->
     <footer class="bg-secondary bg-gradient text-light">
       <div class="container">
@@ -208,6 +242,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
   <script src="Transition.js"></script>
+  <script src="SideWindow.js"></script>
+  <script src="Sidebooking.js"></script>
 </body>
 
 </html>

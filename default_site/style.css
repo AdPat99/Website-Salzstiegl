@@ -9,7 +9,8 @@ body {
   position: relative;
   z-index: 1;
 }
-.completenav{
+
+.completenav {
   position: sticky;
 }
 
@@ -117,7 +118,7 @@ body {
   background-color: beige;
 }
 
-.nav-btn{
+.nav-btn {
   font-size: 20px;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
@@ -132,10 +133,11 @@ body {
   position: relative;
   top: 0;
   z-index: 1;
-  
+
 }
+
 .transition {
-  margin-top: -100px; 
+  margin-top: -100px;
 }
 
 
@@ -149,7 +151,6 @@ body {
   opacity: 1;
   pointer-events: none;
   transition: transform 0.25s ease-out;
-  z-index: 100;
 }
 
 .transition.is-active {
@@ -227,8 +228,81 @@ form input[type="submit"]:active {
   position: absolute;
   z-index: 1;
 }
-h2{
+
+h2 {
   font-family: inka, bold;
+}
+
+/*Side Window*/
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.side-window {
+  position: fixed;
+  bottom: 25%;
+  right: -320px;
+  /* Adjust the width of the side window */
+  width: 320px;
+  /* Adjust the width of the side window */
+  height: 50%;
+  /* Adjust the height of the side window */
+  background-color: white;
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.side-window.open {
+  right: 0;
+}
+
+.side-window .btn-group {
+  text-align: center;
+  /* Center-align the buttons */
+  margin: 20px 0;
+  /* Add margin top and bottom for spacing */
+}
+
+.side-window .btn {
+  margin: 0 20px;
+  /* Add margin to buttons for spacing */
+}
+
+.side-window .btn-visible {
+  display: none;
+}
+
+.side-window.open .btn-visible {
+  display: block;
+}
+
+.vertical-button {
+  position: fixed;
+  right: -25px;
+  /* Adjust the left position */
+  top: 65%;
+  /* Adjust the top position */
+  transform: translateY(-50%) rotate(-90deg);
+  /* Rotate the button text vertically */
+  z-index: 100;
+}
+
+/* Additional custom styles for the form */
+.popup-content {
+  padding: 20px;
+}
+
+.popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
 }
 
 /* About section background */
@@ -265,8 +339,8 @@ footer a {
   overflow: hidden;
 }
 
-.globe{
-  font-size: 40px; 
+.globe {
+  font-size: 40px;
   margin: 0;
 }
 
