@@ -1,8 +1,8 @@
 /*Transition - SUmmer/Winter*/
 window.onload = () => {
   const transElem = document.querySelector('.transition');
-  const STransElem = document.querySelector('#STrans');
-  const WTransElem = document.querySelector('#WTrans');
+  const STransElem = document.querySelector('.STrans');
+  const WTransElem = document.querySelector('.WTrans');
 
   // Summer transition
   STransElem.addEventListener('click', e => {

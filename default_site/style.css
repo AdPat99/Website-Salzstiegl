@@ -23,8 +23,9 @@ body {
   margin: 0;
   width: 82vw;
   height: 18vh;
-  background: linear-gradient(to right, #41B32E, #5CAA4F, #5EAC52, rgba(108, 183, 96, 0.72));
+  background: linear-gradient(to right, #41B32E, #56d241, #6dc74f);
   clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  z-index: -25;
 }
 
 .triangle2 {
@@ -37,6 +38,7 @@ body {
   height: 18vh;
   background: linear-gradient(to right, #3B98C1, #3B98C1, rgba(18, 124, 169));
   clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+  z-index: -20;
 
   display: flex;
   align-items: center;
@@ -122,6 +124,49 @@ body {
   font-size: 20px;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
+}
+
+.navbar-toggler {
+  z-index: 30;
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .top-btn1 .top-btn2 {
+    display: none;
+  }
+
+  .nav-btn {
+    color: black;
+  }
+
+  .btn-sun .btn-snow {
+    color: black;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 10px 20px 10px 10px;
+    padding: 10px;
+    width: 50px !important;
+    height: 50px !important;
+    z-index: 5;
+
+  }
+
+
+
+  .navbar-nav .nav-item {
+    text-align: center;
+    /* Center the menu items */
+  }
 }
 
 /*page begin for fitting nav*/
@@ -211,10 +256,10 @@ form input[type="submit"]:active {
   padding: 0 10px;
 }
 
-#bookbtn {
+.bookbtn {
   display: flex;
   justify-content: center;
-  background-color: green;
+  background-color: #41B32E;
 }
 
 .tooltiptext {
@@ -243,17 +288,14 @@ body {
   position: fixed;
   bottom: 25%;
   right: -320px;
-  /* Adjust the width of the side window */
   width: 320px;
-  /* Adjust the width of the side window */
   height: 50%;
-  /* Adjust the height of the side window */
   background-color: white;
   border-radius: 10px;
-  /* Rounded corners */
   box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease-in-out;
   z-index: 1000;
+  overflow: auto;
 }
 
 .side-window.open {
@@ -262,14 +304,11 @@ body {
 
 .side-window .btn-group {
   text-align: center;
-  /* Center-align the buttons */
   margin: 20px 0;
-  /* Add margin top and bottom for spacing */
 }
 
 .side-window .btn {
   margin: 0 20px;
-  /* Add margin to buttons for spacing */
 }
 
 .side-window .btn-visible {
@@ -283,11 +322,8 @@ body {
 .vertical-button {
   position: fixed;
   right: -25px;
-  /* Adjust the left position */
   top: 65%;
-  /* Adjust the top position */
   transform: translateY(-50%) rotate(-90deg);
-  /* Rotate the button text vertically */
   z-index: 100;
 }
 
@@ -319,6 +355,14 @@ body {
 footer {
   padding: 50px 0;
 }
+.footerelem{
+  padding: 0;
+  margin: 0;
+}
+
+.ShadowBox{
+  box-shadow: 5px rgba(0, 0, 0, 0.2);
+}
 
 footer h3 {
   color: #fff;
@@ -344,6 +388,9 @@ footer a {
   margin: 0;
 }
 
+.headred{
+  color: #9d102c;
+}
 
 /*Dropdown */
 .dropdown:hover>.dropdown-menu {

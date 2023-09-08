@@ -1,4 +1,3 @@
-// booking.js
 function sendEmail() {
     // Erfassen Sie die ausgewählten Informationen aus dem Formular
     const firstName = document.getElementById("firstName").value;

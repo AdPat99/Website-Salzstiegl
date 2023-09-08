@@ -14,51 +14,58 @@
   <div class="transition"></div>
 
   <!-- Navigation bar -->
-
   <div class="completenav">
-    <div class="triangle">
-      <div class="line-sun"></div>
-      <div style="display:flex ;">
-        <a href="../summer_site/sMain.html" class="btn btn-sun" id="STrans">
-          <img src="../Attachments/Transition/Sun.png" style="width :32px ; height :32px ; margin-right :12px ;" alt="">
-          Sommer
-        </a>
-      </div>
-    </div>
-    <div class="triangle2">
-      <div class="line-snow"></div>
-      <div style="display:flex ;" >
-        <a href="../winter_site/wMain.html" class="btn btn-snow" id="WTrans">
-          Winter
-          <img src="../Attachments/Transition/Snowflake.png" style="width :32px ; height :32px ; margin-left :12px ;"
-            alt="">
-        </a>
-      </div>
-    </div>
-
     <nav class="navbar navbar-expand-md">
+      <div class="triangle">
+        <div class="line-sun"></div>
+        <div style="display:flex ;">
+          <a href="../summer_site/sMain.html" class="btn btn-sun STrans d-none d-md-inline">
+            <img src="../Attachments/Transition/Sun.png" id="top-btn1"
+              style="width: 32px; height: 32px; margin-right: 12px;" alt="">
+            Sommer
+          </a>
+        </div>
+      </div>
+      <div class="triangle2">
+        <div class="line-snow"></div>
+        <div style="display:flex ;">
+          <a href="../winter_site/wMain.html" class="btn btn-snow WTrans d-none d-md-inline">
+            Winter
+            <img src="../Attachments/Transition/Snowflake.png" id="top-btn2"
+              style="width: 32px; height: 32px; margin-left: 12px;" alt="">
+          </a>
+        </div>
+      </div>
 
-      <div></div>
-      <a class="navbar-brand" id="Brand" href="Main.html"><img id="Logo" src="../Attachments/Images/Salzlogo_140x60.png" alt=""></a>
+      <a class="navbar-brand" id="Brand" href="Main.html"><img id="Logo" src="../Attachments/Images/Salzlogo_140x60.png"
+          alt=""></a>
 
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link btn-outline-light nav-btn" type="button" href="Main.html">Home</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link btn-outline-light nav-btn" type="button" href="Buchen.html">Buchen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  btn-outline-light nav-btn" type="button" href="Galerie.html">Aktivitäten</a>
+            <a class="nav-link btn-outline-light nav-btn" type="button" href="Preise.html">Preise</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  btn-outline-light nav-btn" type="button" href="Punkt_3.html">Kontakt</a>
+            <a class="nav-link btn-outline-light nav-btn" type="button" href="Info.html">Moasterhaus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-outline-light nav-btn" type="button" href="Kontakt.html">Kontakt</a>
+          <li class="nav-item d-md-none">
+            <a class="nav-link btn-outline-dark btn STrans nav-btn" type="button" href="../summer_site/sMain.html">
+              <img src="../Attachments/Transition/Sun.png" style="width: 32px; height: 32px;" alt="">Sommer</a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link btn WTrans nav-btn" type="button" href="../winter_site/wMain.html"> <img
+                src="../Attachments/Transition/Snowflake.png" id="top-btn2" style="width: 32px; height: 32px;" alt="">
+              Winter
+            </a>
           </li>
         </ul>
       </div>
@@ -77,25 +84,16 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://via.placeholder.com/1500x500" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
+            <img src="../Attachments/Images/Test capture 4(copy).png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://via.placeholder.com/1500x500" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
+            <img src="../Attachments/Images/Test capture 2.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://via.placeholder.com/1500x500" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+            <img src="../Attachments/Images/Test capture.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../Attachments/Images/Test capture 3.png" class="d-block w-100" alt="...">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -108,35 +106,35 @@
         </a>
       </div>
     </header>
+
     <!-- About section with microinteractions -->
     <section class="about">
+      <br>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <h2>Über uns</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus in cum obcaecati distinctio delectus
-              hic molestias saepe tempora temporibus, repudiandae aut quos esse odit voluptatum. Perspiciatis molestiae
-              ea neque iste.</p>
+            <p>Sucht Ihr einen Adrenalinkick einer anderen Art - unberührte Natur, atemberaubende Aussichten,
+              herzensgute Menschen oder einfach nur eine rundum gute Zeit, um einfach einmal loszulassen und den
+              Alltagsstress zu vergessen? Dann ist eure Suche zu Ende, denn Ihr habt den richtigen Ort gefunden!</p>
             <ul class="list-unstyled">
-              <li><i class="fas fa-check"></i> Beispiel 1</li>
-              <li><i class="fas fa-check"></i> Besipiel 2</li>
-              <li><i class="fas fa-check"></i> Beispiel 3</li>
-            </ul>
-            <a href="#" class="btn btn-outline-secondary">Weiter lesen</a>
+              <a href="../default_site/Info.html" type="button" class="btn btn-primary bookbtn">Weiter lesen</a>
           </div>
           <div class="col-md-6">
             <div class="card">
-              <img class="card-img-top" src="" alt="Mountain Hotel">
               <div class="card-body">
                 <h5 class="card-title">Unsere Aktivitäten</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, molestias!</p>
-                <a href="#" class="btn btn-primary">Weiter lesen</a>
+                <p class="card-text">Wir bieten hier im Moasterhaus alle Aktivitäten an, die das Herz begehrt. Es gibt
+                  alles, was man braucht, um eine angenehme Wanderung zu unternehmen, eine aufregende Fahrt mit dem
+                  Trial im Sommer zu unternehmen oder im Winter ein paar Pistenläufe zu unternehmen! Auf unseren Seiten
+                  für Sommer und Winter können Sie mehr über unsere Aktivitäten erfahren.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Rooms section with animations -->
     <section class="rooms">
       <div class="container">
@@ -148,85 +146,64 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1615417435058-55e57b9b9d23" alt="Room">
+              <img class="card-img-top" src="../Attachments/Images/SingleRoom.png" alt="Room">
               <div class="card-body">
-                <h5 class="card-title">Raum 1</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                <a href="#" class="btn btn-outline-secondary">Jetzt Buchen!</a>
+                <h5 class="card-title">Einzelzimmer</h5>
+                <a href="Buchen.html" class="btn btn-primary">Jetzt Buchen!</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1615417435058-55e57b9b9d23" alt="Room">
+              <img class="card-img-top" src="../Attachments/Images/DoubleRoom.png" alt="Room">
               <div class="card-body">
-                <h5 class="card-title">Raum 2</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                <a href="#" class="btn btn-outline-secondary">Jetzt buchen</a>
+                <h5 class="card-title">Zweierzimmer</h5>
+                <a href="Buchen.html" class="btn btn-primary">Jetzt buchen!</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1615417435058-55e57b9b9d23" alt="Room">
+              <img class="card-img-top" src="../Attachments/Images/FamilyRoom.png" alt="Room">
               <div class="card-body">
-                <h5 class="card-title">Raum 3</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                <a href="#" class="btn btn-outline-secondary">Jetzt buchen</a>
+                <h5 class="card-title">Familienzimmer</h5>
+                <a href="Buchen.html" class="btn btn-primary">Jetzt buchen!</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--The side window for booking-->
-    <section>
-      <div id="bookingPopup" class="side-window">
-        <div class="popup-content">
-            <h2>Buchen</h2>
-            <div class="form-group">
-                <label for="popupFirstName">Vorname:</label>
-                <input type="text" id="popupFirstName" class="form-control" required maxlength="50">
-            </div>
-            <div class="form-group">
-                <label for="popupLastName">Nachname:</label>
-                <input type="text" id="popupLastName" class="form-control" required maxlength="50">
-            </div>
-            <div class="form-group">
-                <label for="popupPhone">Telefonnummer:</label>
-                <input type="tel" id="popupPhone" class="form-control" required maxlength="15">
-            </div>
-            <div class="form-group">
-                <label>Extra Wünsche:</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="popupOptions" id="popupOption1" value="Familien Sommerurlaub">
-                    <label class="form-check-label" for="popupOption1" value="Familien Sommerurlaub">Familien Sommerurlaub</label>
-                    <!--There seems to be an issue, that does not put the options into the textfield-->
-                </div>
-            </div>
-            <div class="container row">
-                <button type="button" id="popupBookbtn" class="btn btn-primary btn-visible col-md">Weiter</button>
-                <button type="button" id="popupClosebtn" class="btn btn-secondary col-md">Schließen</button>
-            </div>
-        </div>
-    </div>
+    <br>
 
-    <button type="button" id="bookbtn" class="btn btn-primary vertical-button">Buchen</button>
-    </section>
     <!-- Footer section -->
     <footer class="bg-secondary bg-gradient text-light">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h3>Moasterhaus</h3>
-            <p>Hirschegg<br>AT</p>
+            <h3>Moasterhaus Kontakt</h3>
+            <p class="footerelem">Salzstiegl Tourismus GmbH<br></p>
+            <p class="footerelem">Hirschegg 241</p>
+            <p class="footerelem">A-8584 Hirschegg</p>
+            <p class="footerelem">info@salzstiegl.at</p>
+            <p class="footerelem">+43 (0)3141 2160</p>
+            <br>
+            <br>
+            <h3>Bankverbindung</h3>
+            <p class="footerelem">Raiffeisenbank Lipizzanerheimat</p>
+            <p class="footerelem">IBAN: AT91 3848 7000 0820 3929</p>
+            <p class="footerelem">BIC: RZSTAT2G487</p>
           </div>
           <div class="col-md-4">
             <h3>Öffnungszeiten</h3>
-            <p>Montag - Freitag: 00:00 - 24:00<br>Samstag - Sontag: 00:00 - 24:00</p>
+            <p>***Gasthof Moasterhaus: <br> <b>08 bis ca 22 Uhr täglich geöffnet</b></p>
+            <p>Á la carte Restaurant: <br> <b>11 Uhr 30 bis 17 Uhr</b></p>
+            <p>Täglich Buffet oder köstliche Abendmenüs: <br> <b>18 bis 20 Uhr</b></p>
           </div>
           <div class="col-md-4">
-            <h3>Weitere Informationen</h3>
+            <h3>Partner</h3>
+            <h3>Firmenkooperationen</h3>
+            <br>
             <p>Privacy Policy<br>Terms of Use<br>Cookies</p>
           </div>
         </div>
